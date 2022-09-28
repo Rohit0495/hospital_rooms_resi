@@ -1,10 +1,10 @@
-import React from 'react'
-import Datetime from 'react-datetime'
+import React from 'react';
+import DateTimePicker from 'react-datetime-picker';
 
 const validDate = current => current.day() !== 0
 
-const Calendar = props => (
-  <Datetime
+function Calendar() => {
+  <DateTimePicker
     dateFormat="YYYY-MM-DD"
     timeFormat={false}
     input={false}
@@ -12,6 +12,6 @@ const Calendar = props => (
     onChange={event => props.setCalendarDate(event._d)}
     isValidDate={validDate}
   />
-)
+};
 
-export default Calendar
+export default Calendar;

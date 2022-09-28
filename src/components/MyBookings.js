@@ -1,6 +1,6 @@
 import React from 'react'
 import BookingElement from './BookingElement'
-import Avatar from '../assets/avatar.png'
+// import Avatar from '../assets/avatar.png'
 
 function MyBookings({
   user,
@@ -32,4 +32,4 @@ function MyBookings({
   )
 }
 
-export default MyBookings
+export default MyBookings;
